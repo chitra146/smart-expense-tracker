@@ -13,10 +13,10 @@ def login():
 
     # Simple hardcoded login (for beginner level)
     if username == "admin" and password == "1234":
-        print("Login Successful ✅\n")
+        print("Login Successful\n")
         return True
     else:
-        print("Invalid Credentials ❌")
+        print("Invalid Credentials ")
         return False
 
 
@@ -42,10 +42,10 @@ def add_expense():
         else:
             new_data.to_csv("expenses.csv", index=False)
 
-        print("Expense Added Successfully ✅")
+        print("Expense Added Successfully ")
 
     except ValueError:
-        print("Invalid input! Please enter correct data ❌")
+        print("Invalid input! Please enter correct data ")
 
 
 # ------------------------------
@@ -57,7 +57,7 @@ def view_expenses():
         print("\n===== All Expenses =====")
         print(df)
     except FileNotFoundError:
-        print("No expenses found ❌")
+        print("No expenses found ")
 
 
 # ------------------------------
@@ -70,7 +70,7 @@ def category_summary():
         print("\n===== Category Summary =====")
         print(summary)
     except:
-        print("No data available ❌")
+        print("No data available ")
 
 
 # ------------------------------
@@ -90,7 +90,7 @@ def search_by_date():
         print(filtered)
 
     except:
-        print("Error in searching ❌")
+        print("Error in searching ")
 
 
 # ------------------------------
@@ -118,10 +118,10 @@ def check_budget():
         if monthly_total > budget:
             print("⚠ Budget Exceeded!")
         else:
-            print("Within Budget ✅")
+            print("Within Budget ")
 
     except:
-        print("No expense data found ❌")
+        print("No expense data found ")
 
 
 # ------------------------------
@@ -138,7 +138,7 @@ def visualize():
         plt.show()
 
     except:
-        print("No data to visualize ❌")
+        print("No data to visualize")
 
 
 # ------------------------------
@@ -173,10 +173,10 @@ def main():
         elif choice == "6":
             visualize()
         elif choice == "7":
-            print("Goodbye 👋")
+            print("Goodbye")
             break
         else:
-            print("Invalid choice ❌")
+            print("Invalid choice")
 
 
 # ------------------------------
