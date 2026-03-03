@@ -131,7 +131,7 @@ def add_expense(user_id):
         # ------------------------------
         # SAVE TO CSV FILE
         # ------------------------------
-        file_exists = os.path.isfile("expenses.csv")
+        file_exists = os.path.isfile("expenses.csv") and os.path.getsize("expenses.csv") > 0
 
         with open("expenses.csv", mode="a", newline="") as file:
             writer = csv.writer(file)

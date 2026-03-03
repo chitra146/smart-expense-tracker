@@ -2,7 +2,7 @@ Smart Expense Tracker
 
 A Python-based command-line Expense Tracker application designed to log, manage, analyze, and visualize personal financial transactions with built-in budget monitoring.
 
-Project Overview    Expense Tracker - link
+Project Overview Smart Expense Tracker 
 
 Managing daily expenses manually can be inefficient and error-prone.
 This project provides a simple yet powerful solution to:
