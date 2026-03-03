@@ -126,7 +126,7 @@ def add_expense(user_id):
         """
 
         cursor.execute(query, (user_id, date, float(amount), category, description))
-        conn.commit()   # IMPORTANT
+        conn.commit()   
 
         # ------------------------------
         # SAVE TO CSV FILE
